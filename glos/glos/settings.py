@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(_*v!=a8#r*a^tx8gv@-q+j5qq4&74a)yje8!d=-r*k545+_)x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["glos.com", "glos.onrender.com"]
+ALLOWED_HOSTS = ["serwer-mge.com", "serwer-mge.onrender.com"]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
