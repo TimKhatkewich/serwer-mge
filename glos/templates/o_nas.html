@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %} O nas {% endblock %}
+{% block navigation %}
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="/home">Strona główna</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="/glosowania">Głosowania</a>
+<a class="text-primary dark:text-blue-400 border-b-2 border-primary pb-1 font-['Manrope'] font-bold tracking-tight" href="#">O nas</a>
+{% endblock %}
+
+{% block body %}
+<main class="flex-grow max-w-7xl mx-auto w-full px-6 py-12 md:py-20">
+<!-- Hero Header -->
+<header class="max-w-7xl mx-auto px-8 mb-20">
+<div class="max-w-3xl">
+<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Inicjatywa Akademicka</span>
+<h1 class="font-headline text-6xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                    Poznaj twórców <span class="text-primary-container">ProjectVote</span>.
+                </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl font-body">
+                    Platforma ProjectVote narodziła się z połączenia pasji do technologii oraz chęci stworzenia transparentnego systemu wyboru projektów studenckich.
+                </p>
+</div>
+</header>
+<!-- Main Content Section: Class & School -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-full overflow-hidden shadow-sm relative group">
+<img alt="Uczniowie Infotech w pracowni" class="w-full aspect-video object-cover" data-alt="clean bright modern computer lab with wooden desks and students working together on high-end laptops in a collaborative academic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw2wc36XdQPRlZIP0o1aKWZ4p8DL_IPGgwfZQBR6ZHkUv0aMdYtRAPje1Izo1R1dw3xivQWSwD4jngkL8JdAj2jzqsVbTK2oI_chCCmK0GnRMpxlIdBOxui93otmkqA4P9y14r5S3v3H2EFofwh2gAsw1z790SVjoSZmx09gZ8-s_oYGGaxgM19RkvBuUIe-ajlsiZP-4M3qLK3cHdMrDgS7Mj77VyZr4QPIDQcl5v0Qd_M3Ial8KNE548y_Unfr5toSfVcH36LA"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-8">
+<div class="p-8 bg-surface-container-low rounded-xl">
+<h2 class="font-headline text-3xl font-bold mb-6 text-on-surface">Nasza Tożsamość</h2>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Jesteśmy uczniami klasy <strong class="text-primary">3aT</strong> z Technikum Programistycznego <strong class="text-primary-container">Infotech</strong>. Jako młodzi deweloperzy, podchodzimy do kodowania nie tylko jako do rzemiosła, ale jako narzędzia budowania społeczności.
+                        </p>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-4xl">school</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider text-on-surface">Infotech</p>
+<p class="text-sm text-on-surface-variant">Lider Edukacji Technologicznej</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Idea Section: Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 text-center">
+<h2 class="font-headline text-4xl font-extrabold mb-4">Idea Projektu</h2>
+<div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">code</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Nauka w Praktyce</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Projekt powstał jako integralna część naszych lekcji programowania. Skupiliśmy się na stworzeniu czystego, skalowalnego kodu zgodnie z najlepszymi praktykami.
+                        </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">database</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Architektura Danych</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Zgłębiliśmy tajniki relacyjnych baz danych, projektując system, który zapewnia integralność głosów i pełną przejrzystość wyników w czasie rzeczywistym.
+                        </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Inicjatywa Edukacyjna</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            ProjectVote to dowód na to, że szkolny projekt może wyjść poza ramy zeszytu i stać się realnym narzędziem wspierającym demokratyczny wybór inicjatyw.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Quote / Call to Action -->
+<section class="max-w-7xl mx-auto px-8 mt-32">
+<div class="relative rounded-full overflow-hidden p-1 bg-gradient-to-r from-primary/20 via-primary-container/20 to-primary/20">
+<div class="bg-surface-container-lowest rounded-full px-12 py-16 text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">format_quote</span>
+<h2 class="font-headline text-3xl font-semibold text-on-surface max-w-4xl mx-auto leading-tight italic">
+                        "Wierzymy, że technologia powinna służyć przejrzystości i angażować ludzi w podejmowanie ważnych decyzji. Jako 3aT chcemy wyznaczać nowe standardy w projektach szkolnych."
+                    </h2>
+<div class="mt-8 flex items-center justify-center gap-4">
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+<p class="font-bold text-primary uppercase tracking-[0.2em] text-xs">Zespół 3aT | Infotech</p>
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+{% endblock %}

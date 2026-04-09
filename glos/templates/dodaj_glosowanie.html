@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Dodaj głosowanie {% endblock %}
+
+{% block body %}
+
+<h1>Dodaj nowe głosowanie</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <label for="name">Nazwa twojego głosowania:</label><br>
+    <input type="text" name="name" id="name" required><br><br>
+
+    <label>Opcje do zagłosowania:</label><br>
+
+    <input type="text" name="choices[]" placeholder="Odpowiedź 1" required><br>
+    <input type="text" name="choices[]" placeholder="Odpowiedź 2" required><br>
+
+    <input type="text" name="choices[]" placeholder="Odpowiedź 3"><br>
+    <input type="text" name="choices[]" placeholder="Odpowiedź 4"><br>
+    <input type="text" name="choices[]" placeholder="Odpowiedź 5"><br><br>
+
+    <button type="submit">Dodaj nowe głosowanie</button>
+
+</form>
+
+{% endblock %}

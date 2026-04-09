@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block title %} Strona główna {% endblock %}
+{% block navigation %}
+<a class="text-primary dark:text-blue-400 border-b-2 border-primary pb-1 font-['Manrope'] font-bold tracking-tight" href="#">Strona główna</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="/glosowania">Głosowania</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="/onas">O nas</a>
+{% endblock %}
+
+{% block body %}
+<main class="flex-grow max-w-7xl mx-auto w-full px-6 py-12 md:py-20">
+<!-- Editorial Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center px-6 overflow-hidden">
+<!-- Subtle Background Element -->
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary-container rounded-full blur-[120px]"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto text-center">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-primary font-label text-xs font-bold tracking-widest uppercase mb-8">
+                    3aT Inicjatywa
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] text-on-surface mb-8">
+                    Wybierz najlepszy <br/><span class="text-primary">projekt twórczy.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant font-body max-w-2xl mx-auto mb-10 leading-relaxed">
+                    ProjectVote to platforma do głosowania na innowacyjne pomysły studentów. Wspieraj kreatywność i śledź rankingi na żywo.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="/glosowania">
+    <button class="signature-gradient text-primary px-8 py-4 rounded-xl font-headline font-bold text-base shadow-lg hover:shadow-primary/20 transition-all active:scale-95 w-full sm:w-auto" href="/glosowania">
+                        Zobacz projekty
+                    </button>
+</a>
+<a href="/onas">
+    <button class="bg-surface-container-low text-primary px-8 py-4 rounded-xl font-headline font-bold text-base hover:bg-surface-container-high transition-all w-full sm:w-auto" href="/onas">
+                        Dowiedz się więcej
+                    </button>
+</a>
+
+</div>
+</div>
+</section>
+<!-- Feature Highlights (Compact Bento-ish) -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl group hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-500">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="how_to_vote">how_to_vote</span>
+</div>
+<h3 class="text-xl font-bold mb-3 tracking-tight">Proste głosowanie</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Intuicyjny interfejs pozwala na oddanie głosu w kilka sekund, promując najbardziej wartościowe inicjatywy studenckie.
+                    </p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl group hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-500">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="leaderboard">leaderboard</span>
+</div>
+<h3 class="text-xl font-bold mb-3 tracking-tight">Rankingi Live</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Obserwuj wyniki w czasie rzeczywistym. Nasz system aktualizuje statystyki natychmiast po każdym oddanym głosie.
+                    </p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl group hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-500">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center mb-6 text-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="text-xl font-bold mb-3 tracking-tight">Transparentność</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Każdy głos jest weryfikowany, co gwarantuje uczciwość i autentyczność procesu wyboru najlepszych projektów.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Academic Showcase Teaser Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2">
+<div class="rounded-2xl overflow-hidden shadow-2xl">
+<img alt="Student collaboration" class="w-full h-[400px] object-cover" data-alt="Group of diverse students working together on a modern architectural model in a bright sunlit academic studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHXIIkWHbstel0I2hfoxcr1PakJgtcyLa3DN78lEeIlOC3Df_TB_qNVYRBdttDlLG_7KSl0YRCXn8z_IF2FhpsPf5uGs5AHueGgynRtilKm9CMywqsQ_agNCCBS_j0cMAl7GaLmpnJYZQtBun7U54LRIg8JiTT7SRbyegExaHyW_ZAiOsxpNXxSkOD1MJi-Rq7jZsrgmNAFjst8_iBiSHSHll1XsxzWrUb8-r8qE5Z6sV6RRH7ICnthsHwQ4I7vvzPn7wK61cn8A"/>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="text-4xl font-extrabold tracking-tight mb-6">Kurator Innowacji</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Wierzymy, że najlepsze pomysły rodzą się na styku nauki i pasji. Nasza platforma to cyfrowa galeria, w której każdy projekt jest traktowany jako unikalne dzieło intelektualne.
+                    </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+<div>
+<span class="font-bold block">Weryfikacja merytoryczna</span>
+<span class="text-sm text-on-surface-variant">Wszystkie projekty przechodzą wstępną selekcję opiekunów naukowych.</span>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+<div>
+<span class="font-bold block">Wsparcie mentorów</span>
+<span class="text-sm text-on-surface-variant">Zwycięskie projekty otrzymują dostęp do zasobów inkubatora przedsiębiorczości.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+{% endblock %}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="light" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProjectVote - Rejestracja</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0056D2",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#a93802",
+                        "on-tertiary-fixed-variant": "#812800",
+                        "on-secondary-fixed-variant": "#005313",
+                        "secondary-fixed-dim": "#78dc77",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-background": "#191c1e",
+                        "tertiary-fixed": "#ffdbcf",
+                        "on-primary-fixed": "#001847",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary-fixed": "#002204",
+                        "on-tertiary-fixed": "#380d00",
+                        "inverse-surface": "#2d3133",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed-variant": "#0040a1",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#91f78e",
+                        "on-secondary-container": "#00731e",
+                        "on-primary-container": "#ccd8ff",
+                        "secondary-fixed": "#94f990",
+                        "primary-container": "#0056d2",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#006e1c",
+                        "tertiary": "#822800",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "surface-container": "#eceef0",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-container": "#ffcebd",
+                        "tertiary-fixed-dim": "#ffb59b",
+                        "on-primary": "#ffffff",
+                        "outline": "#737785",
+                        "background": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#b2c5ff",
+                        "surface-tint": "#0056d2",
+                        "on-surface-variant": "#424654",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c3c6d6"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        h1, h2, h3, .font-headline {
+            font-family: 'Manrope', sans-serif;
+        }
+        .text-editorial-lg { font-size: 3.5rem; line-height: 1.1; }
+    </style>
+</head>
+<body class="text-on-surface bg-surface min-h-screen flex flex-col">
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 flex justify-between items-center px-8 py-4 max-w-full">
+<div class="flex items-center gap-8">
+<div class="text-2xl font-black text-primary dark:text-blue-400 font-['Manrope'] tracking-tight">ProjectVote</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="/home">Strona główna</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="/glosowania">Głosowania</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="/onas">O nas</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a href="/login">
+    <button class="p-2 rounded-full hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200">
+    <span class="material-symbols-outlined text-on-surface-variant">account_circle</span>
+    </button>
+</a>
+</div>
+</header>
+<main class="flex-grow max-w-7xl mx-auto w-full px-6 py-12 md:py-20">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-[-5%] right-[-5%] w-[30%] h-[30%] bg-secondary/5 rounded-full blur-3xl"></div>
+<div class="w-full max-w-md relative z-10">
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_12px_32px_-4px_rgba(25,28,30,0.06)] border border-outline-variant/15">
+<header class="mb-10 text-center">
+<h1 class="text-4xl font-extrabold font-headline text-on-surface tracking-tighter mb-2">Zarejestruj się</h1>
+<p class="text-on-surface-variant font-medium">Utwórz konto, aby oddawać głosy i śledzić wyniki.</p>
+</header>
+{% if messages %}
+<div class="mb-6">
+    {% for message in messages %}
+    <div class="bg-error-container text-on-error-container p-4 rounded-xl border border-error/20">
+        {{ message }}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+<form class="space-y-6" method="post">
+{% csrf_token %}
+<div>
+<label class="block text-sm font-semibold text-on-surface-variant mb-2 font-headline ml-1" for="username">Login</label>
+<div class="relative group">
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 px-5 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary/20 focus:bg-primary-fixed transition-all duration-200" id="username" name="username" placeholder="Twój identyfikator" type="text" required/>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2 px-1">
+<label class="block text-sm font-semibold text-on-surface-variant font-headline" for="password">Hasło</label>
+</div>
+<div class="relative group">
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 px-5 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary/20 focus:bg-primary-fixed transition-all duration-200" id="password" name="password" placeholder="••••••••" type="password" required/>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2 px-1">
+<label class="block text-sm font-semibold text-on-surface-variant font-headline" for="password_confirm">Powtórz hasło</label>
+</div>
+<div class="relative group">
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 px-5 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary/20 focus:bg-primary-fixed transition-all duration-200" id="password_confirm" name="password_confirm" placeholder="••••••••" type="password" required/>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full signature-gradient text-black py-4 rounded-xl font-bold text-lg font-headline shadow-md hover:shadow-xl transition-all duration-200 active:scale-[0.98]" type="submit">
+                            Zarejestruj się
+                        </button>
+</div>
+</form>
+<div class="mt-8 text-center">
+<p class="text-on-surface-variant font-medium">
+                        Masz już konto? 
+                        <a class="text-primary font-bold hover:underline ml-1" href="/login">Zaloguj się</a>
+</p>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-center gap-3 text-on-surface-variant/60">
+<span class="material-symbols-outlined text-sm">school</span>
+<span class="text-xs font-semibold tracking-widest uppercase">Academic Standard 2024</span>
+</div>
+</div>
+</main>
+<footer class="hidden md:block py-12 bg-surface-container-low border-t border-outline-variant/10 mt-20">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<div class="text-xl font-black text-primary font-headline">ProjectVote</div>
+<div class="text-sm text-on-surface-variant font-medium">
+                © 2026 ProjectVote. Wszystkie prawa zastrzeżone.
+            </div>
+<div class="flex gap-8">
+<a class="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors" href="#">Prywatność</a>
+<a class="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors" href="#">Warunki</a>
+</div>
+</div>
+</footer>
+</body></html>
